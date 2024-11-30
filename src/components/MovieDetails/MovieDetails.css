@@ -1,0 +1,182 @@
+/* MovieDetails.css */
+.dev{
+  width: 1400px;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  padding: 20px;
+  background: linear-gradient(135deg, #6f9fbc, #a7c6ed);
+  color: white;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-poster {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details {
+  padding: 10px;
+}
+
+.details-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.details-row span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+.booking-process {
+  margin-top: 20px;
+}
+
+
+.grid-cols-2{
+  margin-top: 10px;
+}
+
+/* CSS for styling the button with hover effect */
+.button {
+  margin: 0px 30px;
+  margin-top:-5px ;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #1a73e8; /* Primary button color */
+  color: #ffffff;
+  border-radius: 4px;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  background-color: #135cb8; /* Darker shade on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transform: scale(1.03); /* Slightly enlarges the button */
+}
+
+.button:active {
+  transform: scale(1); /* Resets scaling on click */
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.modal-content h2{
+  padding-bottom: 20px;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.modal button:hover {
+  cursor: pointer;
+  opacity: 0.89;
+  transition: .3s ease;
+}
+
+.modal button:first-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.modal button:last-child {
+  background-color: #f44336;
+  color: white;
+}

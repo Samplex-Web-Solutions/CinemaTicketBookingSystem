@@ -1,0 +1,186 @@
+/* src/styles/styles.css or App.css */
+
+
+.home-controller{
+display: flex;
+flex-direction: column;
+}
+
+.home-container {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .hero-section {
+    position: relative;
+    background-image: url('hero-background.jpg');
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    text-align: center;
+    border-radius: 2px;
+    padding: 300px 100px;
+    height: max-content;
+    width: 100%;
+    color: white; /* Ensure text color contrasts with overlay */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    margin: 10px 0px;
+    z-index: 2; /* Make sure content appears above overlay */
+}
+
+  
+.hero-content p{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding-bottom: 10px;
+
+}
+  .hero-content h1 {
+    font-size: 3em;
+    color: white;
+  }
+  
+  .hero-content p {
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  .hero-content .hero-btn {
+    padding: 10px 20px;
+    background-color: #315c89;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 2px;
+
+  }
+  
+  .hero-content .hero-btn:hover{
+    background-color: #273e56;
+    transition: .3s ease;
+  }
+
+
+
+  /* Featured Movies */
+
+  .featured-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .featured-container .featured-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+    }
+
+  .featured-controller{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px;
+  }
+
+  .featured-controller .featured-method{
+    display: flex;
+    margin-bottom: 60px;
+    
+  }
+  .row-1 {
+    width: 100%; /* Ensures it takes the full width of the parent container */
+    max-width: 400px; /* Set a maximum width to control size on larger screens */
+    height: 500px; /* Set a fixed height for consistent sizing */
+    overflow: hidden; /* Hides any overflow from images that don’t fit perfectly */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  
+  .row-1 img {
+    width: 100%; /* Ensures image covers full width of container */
+    height: 100%; /* Ensures image covers full height of container */
+    object-fit: cover; /* Crops and centers the image to maintain aspect ratio */
+  }
+  
+  
+  .row-2 {
+    align-self: flex-end; /* Moves row-2 to the bottom within column layout */
+    text-align: left;
+    line-height: 2.3rem;
+    width: 50%;
+  }
+
+  .row-2 h2{
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    font-weight: 600;
+  }
+
+
+  .row-2 p, p{
+    font-size: 20px;
+  }
+
+  .ft-span{
+    display: flex;
+    flex-direction: column;
+  }
+
+.ft-span .span-icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ft-span .span-icon p{
+  padding-left: 10px;
+}
+
+.text-3xl{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+/*   
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+   */

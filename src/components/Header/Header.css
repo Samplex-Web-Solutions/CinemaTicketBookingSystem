@@ -1,0 +1,68 @@
+/* Header.css */
+
+header {
+  background-color: #2C3E50; /* Dark blue background */
+  color: white; /* Text color */
+  padding: 1rem 0; /* Padding for top and bottom */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+nav {
+  max-width: 1200px; /* Maximum width for the nav */
+  margin: 0 auto; /* Centering the nav */
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center vertically */
+}
+
+nav a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+  color: #ECF0F1; /* Lighter color on hover */
+}
+
+ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flexbox for horizontal list */
+  gap: 1.5rem; /* Space between list items */
+}
+
+li {
+  position: relative; /* Relative positioning for underline effect */
+}
+
+li a {
+  position: relative; /* Allow pseudo elements */
+  font-size: 1.2rem;
+}
+
+li a::after {
+  content: ''; /* Pseudo element for underline */
+  display: block; /* Block element */
+  width: 0; /* Start with 0 width */
+  height: 2px; /* Height of underline */
+  background: #ECF0F1; /* Color of the underline */
+  transition: width 0.3s; /* Smooth transition for width */
+  position: absolute; /* Absolute positioning */
+  left: 0; /* Align to left */
+  bottom: -4px; /* Position below text */
+}
+
+li a:hover::after {
+  width: 100%; /* Full width on hover */
+}
+
+
+nav img{
+  width: 230px;
+  height: 180px;
+  margin:0px;
+  padding: 0px;
+}

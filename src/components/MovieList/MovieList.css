@@ -1,0 +1,49 @@
+/* MovieList.css */
+
+.movie-list-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.movie-card {
+  background-color: #2C3E50; /* Dark background */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 1rem;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 4px; /* Rounded corners for images */
+  transition: opacity 0.3s ease;
+}
+
+.movie-card img:hover {
+  opacity: 0.9; /* Slight opacity change on hover */
+}
+
+.movie-card h3 {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #ECF0F1; /* Light text color */
+}
+
+.movie-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+.movie-link:hover {
+  color: #ECF0F1; /* Lighter color on hover */
+}

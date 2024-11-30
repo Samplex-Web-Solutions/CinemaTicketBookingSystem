@@ -1,0 +1,23 @@
+Showtime.css
+ShowtimeSelector.css
+SeatSelection.css
+MovieList.css
+MovieDetails.css
+BookingForm.css
+
+
+
+
+
+
+
+ <section className="featured-movies">
+        <h2>Featured Movies</h2>
+        <div className="movie-list">
+          {/* Add movie cards or posters */}
+          <div className="movie-card">
+            <img src={featuredimg} alt="Movie Title" />
+            <p>Movie Title</p>
+          </div>
+        </div>
+      </section>

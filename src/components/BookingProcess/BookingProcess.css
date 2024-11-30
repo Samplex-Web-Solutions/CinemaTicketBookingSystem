@@ -1,0 +1,115 @@
+/* Styles for the card component */
+.card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Header styling */
+.card-header {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #f3f4f6;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Content padding */
+.card-content {
+    padding: 20px;
+}
+
+/* Error alert styling */
+.alert-error {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 16px;
+    color: #b91c1c;
+    background-color: #fee2e2;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Success alert styling */
+.alert-success {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin-bottom: 16px;
+    color: #065f46;
+    background-color: #d1fae5;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Confirmation button */
+.confirm-button {
+    padding: 10px 20px;
+    margin-top: 16px;
+    background-color: #1d4ed8;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.confirm-button:hover {
+    background-color: #2563eb;
+    transform: scale(1.02);
+}
+
+
+/* Container for the main booking section */
+.booking-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.confirm-button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #4caf50;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Confirm button hover effect */
+.confirm-button:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+}
+
+/* Disabled state for confirm button */
+.confirm-button:disabled {
+    background-color: #b0bec5;
+    color: #eceff1;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Additional spacing for components within booking */
+.showtime-list, .seat-map {
+    width: 100%;
+}
+
+
+.card-content button strong{
+
+    font-size: 300px;
+}
